@@ -1,3 +1,5 @@
+<% unless cart.line_items.empty? %>
+
 <p id="notice"><%= notice %></p>
 
 <h2>Your Cart</h2>
@@ -13,3 +15,5 @@
 
 <%= button_to 'Empty cart', cart, method: :delete,
     data: { confirm: 'Are you sure?' } %>
+
+<% end %>
