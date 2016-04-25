@@ -1,5 +1,5 @@
 if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
-
+$('#cart').css({'display':'block'});
 $('#cart').html("<%= escape_javascript render(@cart) %>");
 
 $('#current_item').css({'background-color':'#88ff88'}).
