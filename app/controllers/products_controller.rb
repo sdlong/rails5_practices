@@ -46,7 +46,7 @@ class ProductsController < ApplicationController
         format.json { render :show, status: :ok, location: @product }
 
         @products = Product.all
-        ActionCable.server.broadcast 'products',
+        ActionCable.server.broadcast 'products_channel',
           html: render_to_string('store/index', layout: false)
       else
         format.html { render :edit }
