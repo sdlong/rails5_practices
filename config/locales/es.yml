@@ -10,6 +10,14 @@ es:
         format:    "%n&nbsp;%u"
 
   activerecord:
+    models:
+      order:       "pedido"
+    attributes:
+      order:
+        address:   "Direcci&oacute;n"
+        name:      "Nombre"
+        email:     "E-mail"
+        pay_type:  "Forma de pago"
     errors:
       messages:
         inclusion: "no est&aacute; incluido en la lista"
